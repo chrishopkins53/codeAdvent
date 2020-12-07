@@ -1,5 +1,6 @@
 package codeAdvent;
 
+import codeAdvent.utils.DayFour;
 import codeAdvent.utils.DayOne;
 import codeAdvent.utils.DayThree;
 import codeAdvent.utils.DayTwo;
@@ -46,6 +47,12 @@ public class Main {
             long longResult = DayThree.puzzleTwo(getInputData("src/main/resources/inputs/day3.txt"));
             System.out.println(longResult);
 
+            System.out.println("#################");
+            // Day Four - Puzzle One
+            System.out.println("Day Four - Puzzle One");
+            result = DayFour.puzzleOne(getInputData("src/main/resources/inputs/day4.txt"));
+            System.out.println(result);
+
 
         } catch (Exception e){
             System.out.println("Some exception happened");
@@ -58,8 +65,7 @@ public class Main {
 
     private static List<String> getInputData(String fileName) throws IOException {
 
-        List<String> data = Files.readAllLines(Paths.get(fileName));
-        return data;
+        return Files.readAllLines(Paths.get(fileName));
 
     }
 
