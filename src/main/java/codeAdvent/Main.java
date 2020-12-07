@@ -43,8 +43,8 @@ public class Main {
             System.out.println(result);
             // Day Three - Puzzle Two
             System.out.println("Day Three - Puzzle Two");
-            result = DayThree.puzzleTwo(getInputData("src/main/resources/inputs/day3.txt"));
-            System.out.println(result);
+            long longResult = DayThree.puzzleTwo(getInputData("src/main/resources/inputs/day3.txt"));
+            System.out.println(longResult);
 
 
         } catch (Exception e){

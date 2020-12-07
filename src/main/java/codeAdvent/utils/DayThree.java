@@ -15,7 +15,7 @@ public class DayThree {
         return countTrees(treesList, 3, 1);
     }
 
-    public static int puzzleTwo(List<String> treesList) {
+    public static long puzzleTwo(List<String> treesList) {
 
         int run1 = countTrees(treesList, 1, 1);
         int run2 = countTrees(treesList, 3, 1);
@@ -23,7 +23,13 @@ public class DayThree {
         int run4 = countTrees(treesList, 7, 1);
         int run5 = countTrees(treesList, 1, 2);
 
-        return run1 * run2 * run3 * run4 * run5;
+        long result = run1;
+        result = result * run2;
+        result = result * run3;
+        result = result * run4;
+        result = result * run5;
+
+        return result;
     }
 
 
