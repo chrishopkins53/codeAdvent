@@ -1,4 +1,4 @@
-package codeAdvent.utils;
+package codeAdvent.utils.year2020;
 
 import java.util.ArrayList;
 import java.util.HashMap;

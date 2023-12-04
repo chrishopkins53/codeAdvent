@@ -1,14 +1,11 @@
-package codeAdvent.utils;
+package codeAdvent.utils.year2020;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static codeAdvent.utils.DayTwo.puzzleOne;
-import static codeAdvent.utils.DayTwo.puzzleTwo;
-import static org.junit.jupiter.api.Assertions.*;
 
 class DayTwoTest {
 
@@ -17,12 +14,12 @@ class DayTwoTest {
 
     @Test
     void puzzleOneTest() {
-        assertEquals(2, puzzleOne(passwordList));
+        Assertions.assertEquals(2, DayTwo.puzzleOne(passwordList));
     }
 
     @Test
     void puzzleTwoTest() {
-        assertEquals(1, puzzleTwo(passwordList));
+        Assertions.assertEquals(1, DayTwo.puzzleTwo(passwordList));
     }
 
 
